@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="HOME" />
+
+    <item
+        android:id="@+id/chats"
+        android:icon="@drawable/ic_baseline_chat_bubble_outline_24"
+        android:title="CHATS" />
+    <item
+        android:id="@+id/sell"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="SELL" />
+    <item
+        android:id="@+id/myads"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="MY ADS" />
+    <item
+        android:id="@+id/account"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="ACCOUNT" />
+
+
+
+
+
+
+
+
+
+
+
+</menu>
