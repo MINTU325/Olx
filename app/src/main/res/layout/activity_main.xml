@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,15 +7,29 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/HelloWorld"
-        android:padding="@dimen/dp_20"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Container"
+        android:layout_above="@id/bottomNav"
+        />
 
-</LinearLayout>
+<com.etebarian.meowbottomnavigation.MeowBottomNavigation
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/bottomNav"
+    app:mbn_circleColor="@color/white"
+    app:mbn_selectedIconColor="@color/black"
+    android:layout_alignParentBottom="true"
+    app:mbn_countTextColor="@color/white"
+    app:mbn_countBackgroundColor="#EDECE4"
+    app:mbn_defaultIconColor="#070707"
+    app:mbn_backgroundBottomColor="@color/white"
+    />
+
+
+
+
+
+</RelativeLayout>
 
