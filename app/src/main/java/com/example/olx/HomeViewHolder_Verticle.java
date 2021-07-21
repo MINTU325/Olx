@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class HomeViewHolder_Verticle extends RecyclerView.ViewHolder {
 
-    private TextView mTvFreshRecommendation;
     private ImageView mIvProductImage_Verticle;
     private TextView mTvPrice_Vertical;
     private TextView mTvAddress_Vertical;
@@ -21,7 +20,6 @@ public class HomeViewHolder_Verticle extends RecyclerView.ViewHolder {
     }
 
     private void initViews(View itemView) {
-        mTvFreshRecommendation = itemView.findViewById(R.id.tvFreshRecommendation);
         mIvProductImage_Verticle = itemView.findViewById(R.id.ivProductImage_vertical_rv);
         mTvPrice_Vertical = itemView.findViewById(R.id.tvPrice_vertical_rv);
         mTvAddress_Vertical = itemView.findViewById(R.id.tvAddress_vertical_rv);
