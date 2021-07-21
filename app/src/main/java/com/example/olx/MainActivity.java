@@ -1,13 +1,16 @@
 package com.example.olx;
 
 import android.os.Bundle;
-import android.widget.FrameLayout;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
+import com.example.olx.Fragments.AccountFragment;
+import com.example.olx.Fragments.ChatFragment;
+import com.example.olx.Fragments.HomeFragment;
+import com.example.olx.Fragments.MyadsFragment;
+import com.example.olx.Fragments.SellFragment;
 
 public class MainActivity extends AppCompatActivity {
 //FrameLayout
