@@ -2,78 +2,60 @@ package com.example.olx.Fragments;
 
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
-import android.widget.HorizontalScrollView;
-import android.widget.TextView;
 
-import com.example.olx.HomeAdapter;
-import com.example.olx.Horizontal_rv_model;
 import com.example.olx.R;
-
-import java.util.ArrayList;
 
 public class HomeFragment extends Fragment {
 
-    private TextView mTvFreshRecommendation;
-    private TextView mTvBrowseCategories;
-    private TextView mTvLocation_Horizontal;
-    private EditText mTvEditText;
-    private RecyclerView mHorizontalRecyclerView;
-    private RecyclerView mVerticalRecyclerView;
-    private HomeAdapter homeAdapter;
-    private ArrayList<Horizontal_rv_model> horizontal_rv_modelList = new ArrayList<>();
+    // TODO: Rename parameter arguments, choose names that match
+    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+    private static final String ARG_PARAM1 = "param1";
+    private static final String ARG_PARAM2 = "param2";
+
+    // TODO: Rename and change types of parameters
+    private String mParam1;
+    private String mParam2;
+
+    public HomeFragment() {
+        // Required empty public constructor
+    }
+
+    /**
+     * Use this factory method to create a new instance of
+     * this fragment using the provided parameters.
+     *
+     * @param param1 Parameter 1.
+     * @param param2 Parameter 2.
+     * @return A new instance of fragment HomeFragment.
+     */
+    // TODO: Rename and change types and number of parameters
+    public static HomeFragment newInstance(String param1, String param2) {
+        HomeFragment fragment = new HomeFragment();
+        Bundle args = new Bundle();
+        args.putString(ARG_PARAM1, param1);
+        args.putString(ARG_PARAM2, param2);
+        fragment.setArguments(args);
+        return fragment;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (getArguments() != null) {
+            mParam1 = getArguments().getString(ARG_PARAM1);
+            mParam2 = getArguments().getString(ARG_PARAM2);
+        }
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false);
-
-    }
-
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        initViews(view);
-        buildData();
-        setRecyclerView();
-    }
-
-    private void buildData() {
-        horizontal_rv_modelList.add(new Horizontal_rv_model(R.drawable.ic__car, "CARS"));
-        horizontal_rv_modelList.add(new Horizontal_rv_model(R.drawable.ic__house, "PROPERTIES"));
-        horizontal_rv_modelList.add(new Horizontal_rv_model(R.drawable.ic_mobile, "MOBILES"));
-        horizontal_rv_modelList.add(new Horizontal_rv_model(R.drawable.ic_jobs, "JOBS"));
-        horizontal_rv_modelList.add(new Horizontal_rv_model(R.drawable.ic__cloth, "FASHION"));
-        horizontal_rv_modelList.add(new Horizontal_rv_model(R.drawable.ic__house, "PROPERTIES"));
-        horizontal_rv_modelList.add(new Horizontal_rv_model(R.drawable.ic_mobile, "MOBILES"));
-        horizontal_rv_modelList.add(new Horizontal_rv_model(R.drawable.ic_jobs, "JOBS"));
-        horizontal_rv_modelList.add(new Horizontal_rv_model(R.drawable.ic__car, "cars"));
-    }
-
-    private void setRecyclerView() {
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false);
-        mHorizontalRecyclerView.setLayoutManager(linearLayoutManager);
-        homeAdapter = new HomeAdapter(horizontal_rv_modelList);
-        mHorizontalRecyclerView.setAdapter(homeAdapter);
-
-    }
-
-    private void initViews(View view) {
-        mTvLocation_Horizontal = view.findViewById(R.id.tvLocation_HomeFragment);
-        mTvBrowseCategories = view.findViewById(R.id.tvBrowseCategories);
-        mTvFreshRecommendation = view.findViewById(R.id.tvFreshRecommendation);
-        mTvEditText = view.findViewById(R.id.etSearchView_HomeFragment);
-        mHorizontalRecyclerView = view.findViewById(R.id.horizontalRecyclerView_HomeFragment);
-        mVerticalRecyclerView = view.findViewById(R.id.verticalRecyclerView_HomeFragment);
     }
 }
