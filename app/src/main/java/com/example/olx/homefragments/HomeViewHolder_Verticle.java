@@ -1,4 +1,4 @@
-package com.example.olx;
+package com.example.olx.homefragments;
 
 import android.view.View;
 import android.widget.ImageView;
@@ -6,6 +6,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.olx.R;
 
 public class HomeViewHolder_Verticle extends RecyclerView.ViewHolder {
 

@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment;
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
 import com.example.olx.Fragments.AccountFragment;
 import com.example.olx.Fragments.ChatFragment;
+import com.example.olx.Fragments.HomeFragment;
 import com.example.olx.Fragments.MyadsFragment;
 import com.example.olx.Fragments.SellFragment;
 
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                 Fragment fragment = null;
                 switch (item.getId()) {
                     case 1:
-                        fragment = new com.example.olx.HomeFragment();
+                        fragment = new HomeFragment();
 
                         break;
                     case 2:

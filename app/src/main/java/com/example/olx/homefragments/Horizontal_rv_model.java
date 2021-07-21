@@ -1,4 +1,4 @@
-package com.example.olx;
+package com.example.olx.homefragments;
 
 import android.widget.ImageView;
 
