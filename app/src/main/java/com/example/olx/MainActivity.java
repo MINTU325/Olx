@@ -59,14 +59,14 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView.setOnClickMenuListener(new MeowBottomNavigation.ClickListener() {
             @Override
             public void onClickItem(MeowBottomNavigation.Model item) {
-                Toast.makeText(getApplicationContext(), "You Clicked"+ item.getId(), Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getApplicationContext(), "You Clicked"+ item.getId(), Toast.LENGTH_SHORT).show();
             }
         });
 
         bottomNavigationView.setOnReselectListener(new MeowBottomNavigation.ReselectListener() {
             @Override
             public void onReselectItem(MeowBottomNavigation.Model item) {
-                Toast.makeText(getApplicationContext(), "You Clicked Reselect"+ item.getId(), Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getApplicationContext(), "You Clicked Reselect"+ item.getId(), Toast.LENGTH_SHORT).show();
 
             }
         });
