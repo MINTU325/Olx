@@ -27,6 +27,7 @@ public class MyadsFragment extends Fragment {
     private String mParam2;
 
     public MyadsFragment() {
+
         // Required empty public constructor
     }
 

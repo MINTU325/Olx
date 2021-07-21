@@ -26,7 +26,6 @@ private List<Mobiles> mobilesList;
         return new MobileViewHolder(view);
     }
 
-
     @Override
     public void onBindViewHolder(@NonNull MobileViewHolder holder, int position) {
         Mobiles mobiles = mobilesList.get(position);

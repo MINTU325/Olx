@@ -1,0 +1,66 @@
+{
+  "bikes": [
+    {
+      "price": 45000,
+      "productName": "Bajaj Vikrant",
+      "place": "MI Road , Jaipur ",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/olxclone-8671e.appspot.com/o/bikes%2FBajaj%20Vikrant.jpg?alt=media&token=7459fdf5-a9eb-407a-bced-a59df53e86c1"
+    },
+    {
+      "price": 50000,
+      "productName": "HONDA CB Shine 2013 Model",
+      "place": "Mahesh nagar , Jaipur",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/olxclone-8671e.appspot.com/o/bikes%2FHONDA%20CB%20Shine%202013%20Model.jpg?alt=media&token=965ce76f-35b5-4c77-9053-1b1acf6b024d"
+
+    },
+    {
+      "price": 52000,
+      "productName": "Splender + 2018 Model",
+      "place": "Mahesh nagar , Jaipur",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/olxclone-8671e.appspot.com/o/bikes%2Fsplender%20plus.jpg?alt=media&token=19cd0735-156f-4cdb-aaac-5fafffab51c4"
+
+    },
+    {
+      "price": 650000,
+      "productName": "YAMAHA R15 Black 2012",
+      "place": "Narendra Nagar",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/olxclone-8671e.appspot.com/o/bikes%2FYAMAHA%20R15%20Black%202012.jpg?alt=media&token=039954ab-a6a1-4e7a-bc98-73d625e6d4f8"
+    },
+    {
+      "price": 60000,
+      "productName": "URGENT SELL CD DElUX",
+      "place": "jaipur",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/olxclone-8671e.appspot.com/o/bikes%2Fcd%20deux.jpg?alt=media&token=ea36e53f-9527-4f5a-adde-7eaab3b2acef"
+    },
+    {
+      "price": 80000,
+      "productName": "PULSAR NS 200 IN MINT CONDITION ",
+      "place": "Mansarovar , Jaipur",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/olxclone-8671e.appspot.com/o/bikes%2FPULSAR%20NS%20200%20.jpg?alt=media&token=110e5174-be75-4a55-b8e9-9ad3e72af5d0"
+    },
+    {
+      "price": 990000,
+      "productName": "YAHAMA F-Z",
+      "place": "Malviya Nagar , Jaipur",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/olxclone-8671e.appspot.com/o/bikes%2FYAHAMA%20F-Z.jpg?alt=media&token=4bce8527-eaa1-4b5e-adb6-5d1bdf0a9479"
+    },
+    {
+      "price": 130000,
+      "productName": "ROYAL ENFILD",
+      "place": "Vaisahali Nagar",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/olxclone-8671e.appspot.com/o/bikes%2FROYAL%20ENFILD.jpg?alt=media&token=a150fdf1-19c2-498f-90bf-025ff7d3d4e1"
+    },
+    {
+      "price": 50000,
+      "productName": "TVS STAR CITY 2015 MODEL",
+      "place": "Triveni",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/olxclone-8671e.appspot.com/o/bikes%2Ftvs-star-city-12.jpg?alt=media&token=15ac4caf-4307-4f6e-b0c2-256533bac3ed"
+    },
+    {
+      "price": 70000,
+      "productName": "APACHE RTR 2018 MODEL",
+      "place": "Tonk Phatak, jaipur",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/olxclone-8671e.appspot.com/o/bikes%2FAPACHE%20RTR%202018%20MODEL.jpg?alt=media&token=8601efea-aefe-480d-b03b-8517bfd19657"
+    }
+  ]
+}

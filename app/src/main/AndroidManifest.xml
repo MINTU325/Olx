@@ -12,12 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Olx">
-        <activity android:name=".mobileSection.MobileMainActivity">
-
-
-
-
-        </activity>
+        <activity android:name=".mobileSection.MobileMainActivity"></activity>
+        <activity android:name=".bikes.BikeMainActivity"></activity>
         <activity android:name=".LoginActivity"></activity>
         <activity android:name=".SplashScreen">
             <intent-filter>

@@ -19,8 +19,8 @@ ItemClickHorzontal itemClickHorzontal;
         super(itemView);
         this.itemClickHorzontal = itemClickHorzontal;
         initViews(itemView);
-    }
 
+    }
     private void initViews(View view) {
         mIvProductImage_horizental_rv = view.findViewById(R.id.ivProductImage_horizental_rv);
         mTvProductName_horizental_rv = view.findViewById(R.id.tvProductName_horizental_rv);
