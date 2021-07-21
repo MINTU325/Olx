@@ -13,6 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Olx">
         <activity android:name=".mobileSection.MobileMainActivity">
+
+
+
+
+        </activity>
         <activity android:name=".LoginActivity"></activity>
         <activity android:name=".SplashScreen">
             <intent-filter>
@@ -25,9 +30,7 @@
         <activity android:name=".MainActivity">
 
         </activity>
-        <activity android:name=".MainActivity">
 
-        </activity>
     </application>
 
 </manifest>

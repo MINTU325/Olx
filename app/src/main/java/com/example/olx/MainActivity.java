@@ -8,6 +8,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
+import com.example.olx.Fragments.AccountFragment;
+import com.example.olx.Fragments.ChatFragment;
+import com.example.olx.Fragments.MyadsFragment;
+import com.example.olx.Fragments.SellFragment;
 
 public class MainActivity extends AppCompatActivity {
 //FrameLayout
@@ -30,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 Fragment fragment = null;
                 switch (item.getId()) {
                     case 1:
-                        fragment = new HomeFragment();
+                        fragment = new com.example.olx.HomeFragment();
 
                         break;
                     case 2:
@@ -49,6 +53,8 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
 
+                    default:
+                        throw new IllegalStateException("Unexpected value: " + item.getId());
                 }
                 LoadFragment(fragment);
             }
