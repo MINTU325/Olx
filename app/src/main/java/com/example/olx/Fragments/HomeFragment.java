@@ -1,4 +1,4 @@
-package com.example.olx;
+package com.example.olx.Fragments;
 
 import android.os.Bundle;
 
@@ -14,6 +14,10 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.HorizontalScrollView;
 import android.widget.TextView;
+
+import com.example.olx.HomeAdapter;
+import com.example.olx.Horizontal_rv_model;
+import com.example.olx.R;
 
 import java.util.ArrayList;
 
