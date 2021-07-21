@@ -31,7 +31,7 @@
             android:layout_toRightOf="@id/tvimage"
             android:padding="12dp"
             android:paddingStart="10dp"
-            android:text=" 64"
+            android:text="₹"
             android:textStyle="bold"
             android:layout_marginStart="@dimen/dp_10"
             android:textColor="@color/black2"

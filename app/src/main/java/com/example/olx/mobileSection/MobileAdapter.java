@@ -26,6 +26,7 @@ private List<Mobiles> mobilesList;
         return new MobileViewHolder(view);
     }
 
+
     @Override
     public void onBindViewHolder(@NonNull MobileViewHolder holder, int position) {
         Mobiles mobiles = mobilesList.get(position);
@@ -37,7 +38,6 @@ private List<Mobiles> mobilesList;
     public int getItemCount() {
         return mobilesList.size();
     }
-
 
 
     public  void updateData(List<Mobiles> mobilesList){
