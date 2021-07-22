@@ -1,5 +1,6 @@
 package com.example.olx.mobileSection;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -8,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.olx.R;
+import com.example.olx.ShowProductDetail.MobileDetails;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -17,9 +19,10 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MobileMainActivity extends AppCompatActivity {
+public class MobileMainActivity extends AppCompatActivity implements ItemClickListenerMObile {
     private RecyclerView mRecyclerView;
-//    Mobiles mobilesResponse;
+    RecyclerView myadsRecyclerView;
+
     private MobileAdapter mobileAdapter;
     private List<Mobiles> mobilesList = new ArrayList<>();
 
@@ -28,6 +31,7 @@ public class MobileMainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mobile_json);
         mRecyclerView = findViewById(R.id.mobileRecyclerView);
+        myadsRecyclerView = findViewById(R.id.mobileRecyclerView);
         setRecyclerAdapter();
         StartBackGroundThred();
 
@@ -36,9 +40,8 @@ public class MobileMainActivity extends AppCompatActivity {
     private void setRecyclerAdapter() {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(linearLayoutManager);
-        mobileAdapter = new MobileAdapter(mobilesList);
+        mobileAdapter = new MobileAdapter(mobilesList, this);
         mRecyclerView.setAdapter(mobileAdapter);
-
 
 
     }
@@ -51,7 +54,7 @@ public class MobileMainActivity extends AppCompatActivity {
 
             int data = inputStream.read();
             StringBuilder stringBuilder = new StringBuilder();
-            while (data != -1){
+            while (data != -1) {
                 char ch = (char) data;
                 stringBuilder.append(ch);
                 data = inputStream.read();
@@ -70,9 +73,9 @@ public class MobileMainActivity extends AppCompatActivity {
     private void buildPOJOfronJson(StringBuilder stringBuilder) {
         String json = stringBuilder.toString();
         Gson gson = new Gson();
-        Type type = new TypeToken<ResponseModelMobile>(){
+        Type type = new TypeToken<ResponseModelMobile>() {
         }.getType();
-        ResponseModelMobile responseModelMobile = gson.fromJson(json,type);
+        ResponseModelMobile responseModelMobile = gson.fromJson(json, type);
         mobilesList = responseModelMobile.getMobiles();
         UpDateUI();
 
@@ -99,4 +102,22 @@ public class MobileMainActivity extends AppCompatActivity {
             ReadJsonFromAssets();
         }
     };
+
+    @Override
+    public void OnItemclickMobile(Mobiles mobiles, int position) {
+        Mobiles updateCard;
+        if (mobiles.isJsonMemberBoolean()) {
+            updateCard = new Mobiles(mobiles.getPrice(), mobiles.getProductName(), mobiles.getPlace(), false, mobiles.getImageUrl());
+        } else {
+            updateCard = new Mobiles(mobiles.getPrice(), mobiles.getProductName(), mobiles.getPlace(), true, mobiles.getImageUrl());
+        }
+        mobilesList.set(position, updateCard);
+        mobileAdapter.notifyItemChanged(position);
+
+        Intent intent = new Intent(MobileMainActivity.this, MobileDetails.class);
+        startActivity(intent);
+
+    }
+
+
 }

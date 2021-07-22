@@ -24,6 +24,15 @@ public class Mobiles implements Serializable {
 		return price;
 	}
 
+	public Mobiles(int price, String productName, String place, boolean jsonMemberBoolean, String imageUrl) {
+		this.price = price;
+		this.productName = productName;
+		this.place = place;
+		this.jsonMemberBoolean = jsonMemberBoolean;
+		this.imageUrl = imageUrl;
+
+	}
+
 	public String getProductName(){
 		return productName;
 	}
@@ -39,4 +48,6 @@ public class Mobiles implements Serializable {
 	public String getImageUrl(){
 		return imageUrl;
 	}
+
+
 }

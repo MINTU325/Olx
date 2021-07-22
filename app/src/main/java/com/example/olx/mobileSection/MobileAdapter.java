@@ -13,9 +13,10 @@ import java.util.List;
 
 public class MobileAdapter extends RecyclerView.Adapter<MobileViewHolder> {
 private List<Mobiles> mobilesList;
-
-    public MobileAdapter(List<Mobiles> mobilesList) {
+ItemClickListenerMObile itemClickListenerMObile;
+    public MobileAdapter(List<Mobiles> mobilesList ,ItemClickListenerMObile itemClickListenerMObile) {
         this.mobilesList = mobilesList;
+        this.itemClickListenerMObile = itemClickListenerMObile;
     }
 
     @NonNull
@@ -23,7 +24,7 @@ private List<Mobiles> mobilesList;
     public MobileViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_layout,parent,false);
-        return new MobileViewHolder(view);
+        return new MobileViewHolder(view, itemClickListenerMObile);
     }
 
     @Override
