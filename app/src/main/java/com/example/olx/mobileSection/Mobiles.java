@@ -14,6 +14,9 @@ public class Mobiles implements Serializable {
 	@SerializedName("place")
 	private String place;
 
+	@SerializedName("boolean")
+	private boolean jsonMemberBoolean;
+
 	@SerializedName("imageUrl")
 	private String imageUrl;
 
@@ -27,6 +30,10 @@ public class Mobiles implements Serializable {
 
 	public String getPlace(){
 		return place;
+	}
+
+	public boolean isJsonMemberBoolean(){
+		return jsonMemberBoolean;
 	}
 
 	public String getImageUrl(){

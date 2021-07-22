@@ -1,9 +1,10 @@
 package com.example.olx.mobileSection;
 
-import java.util.List;
-
+import com.example.olx.mobileSection.Mobiles;
 import com.google.gson.annotations.SerializedName;
+
 import java.io.Serializable;
+import java.util.List;
 
 public class ResponseModelMobile implements Serializable {
 
