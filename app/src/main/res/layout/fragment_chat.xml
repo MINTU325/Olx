@@ -1,14 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragments.ChatFragment">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Chats"
+    android:paddingHorizontal="@dimen/dp_20"
+    android:textSize="@dimen/sp_20"
+    android:id="@+id/HeaderBar"
+    android:textStyle="bold"
+    android:textColor="@color/black"
+    android:padding="@dimen/dp_10"
+    android:drawableEnd="@drawable/ic_search"
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    />
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutc"
+        android:layout_below="@id/HeaderBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/ViewPagerc"
+        android:layout_below="@id/tabLayoutc"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="CHat Frag" />
 
-</FrameLayout>
+        />
+</RelativeLayout>

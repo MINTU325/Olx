@@ -58,13 +58,12 @@ public class MobileViewHolder extends RecyclerView.ViewHolder {
             imageButton.setImageResource(ic_heart_like_love_icon);
 
         }
-
-        imageButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                itemClickListenerMObile.OnItemclickMobile(mobiles, getAdapterPosition());
-            }
-        });
+     imageButton.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
+             itemClickListenerMObile.OnLIkeClickMObille(mobiles, getAdapterPosition());
+         }
+     });
 
         mProductImage.setOnClickListener(new View.OnClickListener() {
             @Override

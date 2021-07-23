@@ -1,15 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".mobileSection.MobileMainActivity">
-<androidx.recyclerview.widget.RecyclerView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/mobileRecyclerView"
 
-    />
-</LinearLayout>
+
+    <EditText
+        android:id="@+id/etSearchView_HomeFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/bg_rect"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="@dimen/dp_2"
+        android:hint="Find Cars, Mobiles, Phones.."
+        android:padding="@dimen/dp_10"
+        app:layout_constraintTop_toBottomOf="@+id/ivLocation_HomeFragment" />
+
+
+
+    <ImageView
+        android:id="@+id/locate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_15"
+        android:layout_toRightOf="@id/etSearchView_HomeFragment"
+        android:src="@drawable/ic_location"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_toRightOf="@id/locate"
+        android:src="@drawable/ic_threeines"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/etSearchView_HomeFragment"
+        android:id="@+id/mobileRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+</RelativeLayout>

@@ -105,6 +105,15 @@ public class MobileMainActivity extends AppCompatActivity implements ItemClickLi
 
     @Override
     public void OnItemclickMobile(Mobiles mobiles, int position) {
+
+
+        Intent intent = new Intent(MobileMainActivity.this, MobileDetails.class);
+        startActivity(intent);
+
+    }
+
+    @Override
+    public void OnLIkeClickMObille(Mobiles mobiles, int position) {
         Mobiles updateCard;
         if (mobiles.isJsonMemberBoolean()) {
             updateCard = new Mobiles(mobiles.getPrice(), mobiles.getProductName(), mobiles.getPlace(), false, mobiles.getImageUrl());
@@ -113,10 +122,6 @@ public class MobileMainActivity extends AppCompatActivity implements ItemClickLi
         }
         mobilesList.set(position, updateCard);
         mobileAdapter.notifyItemChanged(position);
-
-        Intent intent = new Intent(MobileMainActivity.this, MobileDetails.class);
-        startActivity(intent);
-
     }
 
 
