@@ -14,6 +14,8 @@ public class Bikes implements Serializable {
 
 	@SerializedName("place")
 	private String place;
+	@SerializedName("boolean")
+	private boolean jsonMemberBoolean;
 
 	@SerializedName("imageUrl")
 	private String imageUrl;
@@ -29,8 +31,19 @@ public class Bikes implements Serializable {
 	public String getPlace(){
 		return place;
 	}
+	public boolean isJsonMemberBoolean(){
+		return jsonMemberBoolean;
+	}
 
 	public String getImageUrl(){
 		return imageUrl;
+	}
+
+	public Bikes(int price, String productName, String place, boolean jsonMemberBoolean, String imageUrl) {
+		this.price = price;
+		this.productName = productName;
+		this.place = place;
+		this.jsonMemberBoolean = jsonMemberBoolean;
+		this.imageUrl = imageUrl;
 	}
 }
