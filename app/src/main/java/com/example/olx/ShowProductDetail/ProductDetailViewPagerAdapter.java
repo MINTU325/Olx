@@ -8,7 +8,6 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import com.example.olx.MyAdsSection.FirstFragment;
 import com.example.olx.MyAdsSection.SecondFragment;
-import com.example.olx.MyAdsSection.ThirdFragment;
 
 public class ProductDetailViewPagerAdapter extends FragmentStateAdapter {
     public ProductDetailViewPagerAdapter(@NonNull FragmentManager fragmentManager, @NonNull Lifecycle lifecycle) {
@@ -22,8 +21,6 @@ public class ProductDetailViewPagerAdapter extends FragmentStateAdapter {
         switch (position) {
             case 1:
                 return new pic2Fragment();
-            case 2:
-                return new pic3Fragment();
 
         }
         return new pic1Fragment();

@@ -314,7 +314,7 @@
             android:layout_marginTop="@dimen/dp_5"
             android:padding="@dimen/dp_5"
             android:textSize="@dimen/sp_18"
-            android:textColor="@color/black"
+            android:textColor="@color/olx"
             />
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"

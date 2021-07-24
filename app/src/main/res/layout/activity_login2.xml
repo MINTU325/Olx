@@ -56,7 +56,7 @@
             android:background="@drawable/bg_rect"
             android:drawableStart="@drawable/ic_facebook"
             android:drawablePadding="@dimen/dp_10"
-            android:hint="Continue With Phone"
+            android:hint="Continue With FaceBook"
             android:padding="@dimen/dp_10" />
 
         <EditText
@@ -69,7 +69,7 @@
             android:background="@drawable/bg_rect"
             android:drawableStart="@drawable/ic_google"
             android:drawablePadding="@dimen/dp_10"
-            android:hint="Continue With Phone"
+            android:hint="Continue With Google"
             android:padding="@dimen/dp_10" />
 
         <EditText
@@ -82,7 +82,7 @@
             android:background="@drawable/bg_rect"
             android:drawableStart="@drawable/ic_baseline_email_24"
             android:drawablePadding="@dimen/dp_10"
-            android:hint="Continue With Phone"
+            android:hint="Continue With Message"
             android:padding="@dimen/dp_10" />
 
         <ImageView

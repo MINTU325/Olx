@@ -8,7 +8,6 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import com.example.olx.MyAdsSection.FirstFragment;
 import com.example.olx.MyAdsSection.SecondFragment;
-import com.example.olx.MyAdsSection.ThirdFragment;
 
 public class ChatPAgerAdapter extends FragmentStateAdapter {
 

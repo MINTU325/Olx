@@ -5,13 +5,27 @@
     android:layout_height="match_parent"
     tools:context=".Fragments.MyadsFragment">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Ads"
+        android:id="@+id/myAds"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_5"
+        android:padding="@dimen/dp_10"
+        android:textSize="@dimen/sp_25"
+        android:textColor="@color/olx"
+        />
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
+        android:layout_below="@id/myAds"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/ViewPageerr"
+        android:layout_below="@id/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
 
