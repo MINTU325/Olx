@@ -7,7 +7,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.olx.R;
+import com.example.olx.bikes.Bikes;
 
 public class HomeViewHolder_Verticle extends RecyclerView.ViewHolder {
 
@@ -26,5 +28,12 @@ public class HomeViewHolder_Verticle extends RecyclerView.ViewHolder {
         mTvPrice_Vertical = itemView.findViewById(R.id.tvPrice_vertical_rv);
         mTvAddress_Vertical = itemView.findViewById(R.id.tvAddress_vertical_rv);
         mTvLocation_Vertical = itemView.findViewById(R.id.tvLocation_vertical_rv);
+    }
+
+    public void setData(Vertical_rv_model vertical_rv_model) {
+        mIvProductImage_Verticle.setImageResource(vertical_rv_model.getImageId());
+        mTvPrice_Vertical.setText(vertical_rv_model.getPrice()+"");
+        mTvAddress_Vertical.setText(vertical_rv_model.getAddress());
+        mTvLocation_Vertical.setText(vertical_rv_model.getLocation());
     }
 }

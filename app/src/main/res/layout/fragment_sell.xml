@@ -1,9 +1,260 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"
     tools:context=".Fragments.SellFragment">
 
+    <TextView
+        android:id="@+id/tvOffering"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_20"
+        android:drawableStart="@drawable/ic_baseline_cancel_24"
+        android:drawablePadding="@dimen/dp_20"
+        android:text="What are you offering?"
+        android:textColor="@color/olx"
+        android:textSize="20sp" />
 
-</FrameLayout>
+    <View
+        android:id="@+id/viewOne"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tvOffering"
+        android:background="@color/olx" />
+
+    <ImageView
+        android:id="@+id/ivCar_SellFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewOne"
+        android:layout_marginStart="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_50"
+        android:src="@drawable/ic__car" />
+
+    <TextView
+        android:id="@+id/tvCars_sellFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivCar_SellFragment"
+        android:layout_marginStart="@dimen/dp_60"
+        android:text="cars"
+        android:textColor="@color/olx" />
+
+    <View
+        android:id="@+id/viewTwo"
+        android:layout_width="1dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="@dimen/dp_50"
+        android:layout_marginTop="110dp"
+        android:layout_toEndOf="@id/ivCar_SellFragment"
+        android:background="@color/olx" />
+
+    <View
+        android:id="@+id/viewThree"
+        android:layout_width="140dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/tvCars_sellFragment"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/olx" />
+
+    <ImageView
+        android:id="@+id/ivProperties_SellFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewOne"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dp_50"
+        android:layout_marginEnd="@dimen/dp_50"
+        android:src="@drawable/ic__house" />
+
+    <TextView
+        android:id="@+id/tvProperties_sellFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivProperties_SellFragment"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_50"
+        android:text="Properties"
+        android:textColor="@color/olx" />
+
+    <View
+        android:id="@+id/viewFour"
+        android:layout_width="1dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="@dimen/dp_50"
+        android:layout_toStartOf="@id/ivProperties_SellFragment"
+        android:background="@color/olx" />
+
+    <View
+        android:id="@+id/viewFive"
+        android:layout_width="140dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/tvProperties_sellFragment"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/olx" />
+
+    <ImageView
+        android:id="@+id/ivMobile_SellFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewTwo"
+        android:layout_marginStart="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_50"
+        android:src="@drawable/ic_mobile" />
+
+    <TextView
+        android:id="@+id/tvMobiles_sellFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivMobile_SellFragment"
+        android:layout_marginStart="@dimen/dp_60"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="Mobiles"
+        android:textColor="@color/olx" />
+
+    <View
+        android:id="@+id/view_ver_Mobile"
+        android:layout_width="1dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="@dimen/dp_50"
+        android:layout_marginTop="260dp"
+        android:layout_toEndOf="@id/ivMobile_SellFragment"
+        android:background="@color/olx" />
+
+    <View
+        android:id="@+id/view_hor_Mobile"
+        android:layout_width="140dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/tvMobiles_sellFragment"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="22dp"
+        android:background="@color/olx" />
+
+    <ImageView
+        android:id="@+id/ivJobs_SellFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewFive"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dp_50"
+        android:layout_marginEnd="@dimen/dp_50"
+        android:src="@drawable/ic_jobs" />
+
+    <TextView
+        android:id="@+id/tvJobs_sellFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivJobs_SellFragment"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_70"
+        android:text="Jobs"
+        android:textColor="@color/olx" />
+
+    <View
+        android:id="@+id/view_ver_Jobs"
+        android:layout_width="1dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginEnd="@dimen/dp_50"
+        android:layout_toStartOf="@id/ivJobs_SellFragment"
+        android:background="@color/olx" />
+
+    <View
+        android:id="@+id/view_hor_Jobs"
+        android:layout_width="140dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/tvJobs_sellFragment"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="25dp"
+        android:background="@color/olx" />
+
+    <ImageView
+        android:id="@+id/ivBikes_SellFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_hor_Mobile"
+        android:layout_marginStart="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_50"
+        android:src="@drawable/ic__bike" />
+
+    <TextView
+        android:id="@+id/tvBikes_sellFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivBikes_SellFragment"
+        android:layout_marginStart="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="Bikes"
+        android:textColor="@color/olx" />
+
+    <View
+        android:id="@+id/view_ver_Bike"
+        android:layout_width="1dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="@dimen/dp_80"
+        android:layout_marginTop="420dp"
+        android:layout_toEndOf="@id/tvBikes_sellFragment"
+        android:background="@color/olx" />
+
+    <View
+        android:id="@+id/view_hor_Bike"
+        android:layout_width="140dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/tvBikes_sellFragment"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="@dimen/dp_45"
+        android:background="@color/olx" />
+
+    <ImageView
+        android:id="@+id/ivMore_SellFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_hor_Jobs"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dp_50"
+        android:layout_marginEnd="@dimen/dp_75"
+        android:src="@drawable/ic_more" />
+
+    <TextView
+        android:id="@+id/tvMore_sellFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivMore_SellFragment"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_70"
+        android:text="more"
+        android:textColor="@color/olx" />
+
+    <View
+        android:id="@+id/view_ver_More"
+        android:layout_width="1dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginEnd="@dimen/dp_60"
+        android:layout_toStartOf="@id/ivMore_SellFragment"
+        android:background="@color/olx" />
+
+    <View
+        android:id="@+id/view_hor_more"
+        android:layout_width="140dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/tvMore_sellFragment"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="22dp"
+        android:background="@color/olx" />
+
+
+
+
+</RelativeLayout>
