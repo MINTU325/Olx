@@ -114,7 +114,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/ivMobile_SellFragment"
-        android:layout_marginStart="@dimen/dp_60"
+        android:textAlignment="center"
+        android:layout_marginStart="@dimen/dp_40"
         android:layout_marginTop="@dimen/dp_10"
         android:text="Mobiles"
         android:textColor="@color/olx" />
@@ -211,7 +212,6 @@
         android:layout_height="1dp"
         android:layout_below="@id/tvBikes_sellFragment"
         android:layout_marginStart="22dp"
-        android:layout_marginTop="@dimen/dp_45"
         android:background="@color/olx" />
 
     <ImageView
@@ -253,6 +253,7 @@
         android:layout_marginTop="42dp"
         android:layout_marginEnd="22dp"
         android:background="@color/olx" />
+
 
 
 
