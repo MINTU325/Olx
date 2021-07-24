@@ -2,6 +2,8 @@ package com.example.olx.ShowProductDetail;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -12,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.bumptech.glide.Glide;
+import com.example.olx.Chat_Section.ChatRecyclerView.ChatActivity;
 import com.example.olx.R;
 import com.google.android.material.tabs.TabLayout;
 
@@ -21,6 +24,7 @@ import java.util.List;
 public class MobileDetails extends AppCompatActivity {
     TabLayout tabLayout;
     ViewPager2 ViewPager;
+    private Button Chatbutton;
     pic1Fragment pic1Fragment;
     private TextView mPhonePrice;
     private TextView mPhoneName;
@@ -42,6 +46,7 @@ public class MobileDetails extends AppCompatActivity {
         mPhonePrice = findViewById(R.id.phonePriceid);
          mPhoneName = findViewById(R.id.phoneNameid);
         mPhonePlace = findViewById(R.id.phonePlaceid);
+        Chatbutton   = findViewById(R.id.ChatButton);
 //        mImageView =.findViewById(R.id.imageViewPic1);
         LoadViewPAgerAdapter();
 
@@ -53,6 +58,13 @@ public class MobileDetails extends AppCompatActivity {
         mPhonePrice.setText(price+"");
         mPhoneName.setText(mobile);
         mPhonePlace.setText(plcee);
+        Chatbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(MobileDetails.this, ChatActivity.class);
+                startActivity(intent1);
+            }
+        });
 //        Glide.with(mImageView).load(imagedata).into(mImageView);
 
 

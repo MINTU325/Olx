@@ -1,81 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Chat_Section.ALLFragment">
-
-    <TextView
-        android:id="@+id/tvQuickFilter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/dp_5"
-        android:layout_marginTop="@dimen/dp_10"
-        android:paddingHorizontal="@dimen/dp_10"
-        android:text="quick Filters"
-        android:textAllCaps="true"
-        android:textSize="@dimen/sp_15"
-        android:textStyle="bold" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:id="@+id/sellerid"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tvQuickFilter"
-        android:padding="@dimen/dp_10">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/dp_5"
-            android:layout_marginStart="@dimen/dp_10"
-            android:background="@drawable/bg_circular_rect"
-            android:backgroundTint="#57EADC"
-            android:padding="@dimen/dp_10"
-            android:text="All"
-            android:textAllCaps="false"
-            android:textColor="@color/black"
-            android:textSize="@dimen/sp_12" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/dp_5"
-            android:background="@drawable/bg_circular_rect"
-            android:padding="@dimen/dp_10"
-            android:text="Meeting"
-            android:textAllCaps="false"
-            android:textColor="@color/black"
-            android:textSize="@dimen/sp_12" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/dp_5"
-            android:background="@drawable/bg_circular_rect"
-            android:padding="@dimen/dp_10"
-            android:text="Unread"
-            android:textAllCaps="false"
-            android:textColor="@color/black"
-            android:textSize="@dimen/sp_12" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/dp_5"
-            android:background="@drawable/bg_circular_rect"
-            android:padding="@dimen/dp_10"
-            android:text="Important"
-            android:textAllCaps="false"
-            android:textColor="@color/black"
-            android:textSize="@dimen/sp_12" />
-    </LinearLayout>
+    android:background="#A9C0C4"
+    tools:context=".Chat_Section.ChatRecyclerView.ChatActivity">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:id="@+id/selleridCard"
-        android:layout_below="@id/sellerid"
         android:layout_height="@dimen/dp_100">
 
         <RelativeLayout
@@ -153,5 +86,59 @@
         </RelativeLayout>
 
     </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_below="@id/selleridCard"
+        android:layout_height="match_parent"
+        android:layout_above="@id/lloyout" />
+
+    <LinearLayout
+        android:id="@+id/lloyout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etChatMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter the message here" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <EditText
+                android:id="@+id/etSenderOrReceiver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_attach"
+                android:drawablePadding="@dimen/dp_15"
+                android:hint="Sender or user (1 or 2)           " />
+
+
+            <TextView
+                android:id="@+id/btnSend"
+                android:layout_width="@dimen/dp_50"
+                android:paddingVertical="@dimen/dp_10"
+                android:padding="@dimen/dp_10"
+                android:drawableStart="@drawable/ic_baseline_send_24"
+                android:layout_height="wrap_content"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
 
 </RelativeLayout>

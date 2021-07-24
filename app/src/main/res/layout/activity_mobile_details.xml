@@ -330,11 +330,12 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/dp_5"
+                android:layout_margin="@dimen/dp_10"
                 android:layout_weight="1"
                 android:text="Chat"
-                android:drawableLeft="@drawable/ic_chaticon"
-                android:background="#043C3B"
+                android:id="@+id/ChatButton"
+                android:background="@color/olx"
+                android:drawableStart="@drawable/ic_chaticon"
                 android:textColor="@color/white"
                 android:padding="@dimen/dp_10"
                 tools:ignore="ButtonStyle" />
@@ -342,12 +343,11 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/dp_5"
+                android:layout_margin="@dimen/dp_10"
                 android:layout_weight="1"
                 android:text="Make Offer"
-                android:drawablePadding="@dimen/dp_12"
                 android:drawableLeft="@drawable/ic_makeoffer"
-                android:background="#043C3B"
+                android:background="@color/olx"
                 android:textColor="@color/white"
                 tools:ignore="ButtonStyle" />
 
