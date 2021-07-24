@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ShowProductDetail.MobileDetails">
-
+    tools:context=".ShowProductDetailForBike.BikeDetailActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,13 +12,13 @@
         android:orientation="vertical">
 
         <com.google.android.material.tabs.TabLayout
-            android:id="@+id/rtabLayout"
+            android:id="@+id/btabLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <!--            -->
 
         <androidx.viewpager2.widget.ViewPager2
-            android:id="@+id/rViewPageerr"
+            android:id="@+id/bViewPageerr"
             android:layout_width="match_parent"
             android:layout_height="300dp"
 
@@ -43,8 +43,8 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginStart="@dimen/dp_5"
                     android:padding="@dimen/dp_10"
-                    android:drawableEnd="@drawable/ic_heart_like_love_icon"
                     android:paddingHorizontal="@dimen/dp_10"
+                    android:text="25 July 20221"
                     android:textSize="@dimen/sp_15" />
 
                 <TextView
@@ -57,8 +57,7 @@
                     android:layout_toRightOf="@+id/ClientNAmedd"
                     android:padding="@dimen/dp_10"
                     android:paddingHorizontal="@dimen/dp_10"
-                    android:text="30000"
-                    android:id="@+id/phonePriceid"
+                    android:text="55000"
                     android:textSize="@dimen/sp_15"
                     android:textStyle="bold" />
 
@@ -68,11 +67,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
                     android:paddingHorizontal="@dimen/dp_10"
                     android:text="₹"
-                    android:layout_marginTop="@dimen/dp_10"
                     android:textColor="@color/black"
-                    android:textSize="18sp"
+                    android:textSize="@dimen/sp_15"
                     android:textStyle="bold" />
 
 
@@ -82,9 +81,10 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/ClientNAmedd"
                     android:layout_marginStart="@dimen/dp_40"
-                    android:padding="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:drawableEnd="@drawable/ic_dots"
                     android:paddingHorizontal="@dimen/dp_10"
-                    android:text="One Plus 3T "
+                    android:text="Vivo v20 "
                     android:textColor="@color/black"
                     android:textSize="@dimen/sp_15" />
 
@@ -94,21 +94,19 @@
                     android:layout_below="@id/phoneNameid"
                     android:layout_marginStart="@dimen/dp_10"
                     android:layout_marginTop="@dimen/dp_10"
-                    android:id="@+id/phonePlaceid"
                     android:drawableStart="@drawable/ic_location_on"
-                    android:drawablePadding="@dimen/dp_10"
+                    android:drawablePadding="@dimen/dp_5"
                     android:layout_marginVertical="@dimen/dp_5"
                     android:paddingHorizontal="@dimen/dp_10"
                     android:text="Kukas Jaipur"
                     android:textColor="@color/black"
                     android:textSize="@dimen/dp_12" />
 
-
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="2dp"
+                    android:layout_height="1dp"
                     android:layout_alignParentBottom="true"
-                    android:background="#45000000" />
+                    android:background="@color/black" />
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
@@ -164,16 +162,15 @@
 
                     android:padding="@dimen/dp_10"
                     android:paddingHorizontal="@dimen/dp_10"
-                    android:text="One Plus"
+                    android:text="Vivo"
                     android:textColor="@color/black"
                     android:textSize="@dimen/sp_15" />
 
-
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="2dp"
+                    android:layout_height="1dp"
                     android:layout_alignParentBottom="true"
-                    android:background="#45000000" />
+                    android:background="@color/black" />
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
@@ -220,9 +217,9 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="2dp"
+                    android:layout_height="1dp"
                     android:layout_alignParentBottom="true"
-                    android:background="#45000000" />
+                    android:background="@color/black" />
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
@@ -240,12 +237,11 @@
 
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/OwnerPic"
-                    android:layout_marginStart="@dimen/dp_10"
-                    android:layout_width="40dp"
-                    android:layout_height="@dimen/dp_40"
+                    android:layout_width="@dimen/dp_60"
+                    android:layout_height="@dimen/dp_60"
                     android:layout_margin="@dimen/dp_5"
                     android:layout_marginTop="@dimen/dp_10"
-                    android:background="@drawable/ic_baseline_account_circle_24"
+                    android:background="@drawable/shineone"
                     android:contentDescription="TODO" />
 
                 <TextView
@@ -297,29 +293,17 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="2dp"
+                    android:layout_height="1dp"
                     android:layout_alignParentBottom="true"
-                    android:background="#45000000" />
+                    android:background="@color/black" />
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Related Ads"
-            android:textStyle="bold"
-            android:layout_marginStart="@dimen/dp_10"
-            android:layout_marginTop="@dimen/dp_5"
-            android:padding="@dimen/dp_5"
-            android:textSize="@dimen/sp_18"
-            android:textColor="@color/black"
-            />
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:id="@+id/Horizontalrecycler"
-            android:layout_height="wrap_content"/>
+
+
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -333,10 +317,7 @@
                 android:layout_margin="@dimen/dp_5"
                 android:layout_weight="1"
                 android:text="Chat"
-                android:drawableLeft="@drawable/ic_chaticon"
-                android:background="#043C3B"
-                android:textColor="@color/white"
-                android:padding="@dimen/dp_10"
+                android:textColor="@color/black"
                 tools:ignore="ButtonStyle" />
 
             <Button
@@ -344,11 +325,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dp_5"
                 android:layout_weight="1"
-                android:text="Make Offer"
-                android:drawablePadding="@dimen/dp_12"
-                android:drawableLeft="@drawable/ic_makeoffer"
-                android:background="#043C3B"
-                android:textColor="@color/white"
+                android:text="Chat"
+                android:textColor="@color/black"
                 tools:ignore="ButtonStyle" />
 
         </LinearLayout>

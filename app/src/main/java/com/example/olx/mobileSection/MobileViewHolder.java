@@ -21,6 +21,7 @@ import static com.example.olx.R.drawable.ic_heartfilled;
 
 public class MobileViewHolder extends RecyclerView.ViewHolder {
     List<LIkesModel> lIkesModelList = new ArrayList<>();
+
     LIkesModel card;
     private TextView mPrice;
     private TextView mProductName;
@@ -35,6 +36,7 @@ public class MobileViewHolder extends RecyclerView.ViewHolder {
         this.itemClickListenerMObile = itemClickListenerMObile;
         initView(itemView);
     }
+
 
     private void initView(View itemView) {
 

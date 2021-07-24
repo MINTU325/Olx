@@ -3,17 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ShowProductDetail.pic1Fragment">
+    tools:context=".ShowProductDetailForBike.Bike3">
+
 
     <ImageView
         android:layout_width="match_parent"
-        android:id="@+id/imageViewPic1"
         android:layout_height="match_parent"
-        android:background="@drawable/one3"
+        android:background="@drawable/shine4"
         android:contentDescription="TODO" />
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_alignParentBottom="true"
-        android:background="@color/black" />
 </RelativeLayout>

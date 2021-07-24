@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_5"
+    android:elevation="12dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:padding="@dimen/dp_10"
+        android:gravity="center"
+        android:background="@drawable/bg_rect"
+
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/dp_150"
+            android:id="@+id/phoneimage"
+            android:layout_height="200dp"
+            android:background="@drawable/billgates" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹"
+            android:textStyle="bold"
+            android:layout_below="@id/phoneimage"
+            android:id="@+id/signrupee"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="23000"
+            android:layout_marginTop="@dimen/dp_5"
+            android:drawablePadding="@dimen/dp_100"
+            android:id="@+id/price"
+            android:drawableEnd="@drawable/ic_heart_like_love_icon"
+
+            android:paddingHorizontal="@dimen/dp_5"
+            android:layout_toRightOf="@id/signrupee"
+            android:layout_below="@id/phoneimage"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I Phone XS rose Gold"
+            android:id="@+id/PhoneName"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_below="@id/price"
+            android:paddingHorizontal="@dimen/dp_5"
+            android:layout_toRightOf="@id/signrupee"
+            android:textColor="#70000000"
+            android:textSize="@dimen/sp_15" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="23000"
+            android:id="@+id/Phoneplace"
+            android:layout_marginTop="5dp"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingHorizontal="@dimen/dp_5"
+            android:layout_below="@id/PhoneName"
+            android:textColor="#70000000"
+            android:drawableStart="@drawable/ic_location_on"
+            android:textSize="@dimen/sp_12"
+
+            />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -12,11 +12,6 @@ import android.view.ViewGroup;
 
 import com.example.olx.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link pic2Fragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class pic2Fragment extends Fragment {
 
 

@@ -65,6 +65,72 @@
       "place": "Tonk Phatak, jaipur",
       "boolean": false,
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/olxclone-8671e.appspot.com/o/mobile%2FIphone%2012(8128).jpg?alt=media&token=5aa827f1-2642-42a4-bb44-07ed2444c8c6"
+    },
+    {
+      "price": 6999,
+      "productName": "Appo A5(2020)",
+      "place": "MI Road , Jaipur ",
+      "boolean": false,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/olxclone-8671e.appspot.com/o/mobile%2Foppoa5.jpg?alt=media&token=9f6a4d58-7511-4edf-98f6-7cc459eb1445"
+    },
+    {
+      "price": 13000,
+      "productName": "One plus 3T",
+      "place": "Mahesh nagar , Jaipur",
+      "boolean": false,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/olxclone-8671e.appspot.com/o/mobile%2Foneplus%203t.jpg?alt=media&token=028e7cd3-f672-48f8-b11c-299f9fd18fb1"
+    },
+    {
+
+      "price": 5000,
+      "productName": "MI Note 5 pro",
+      "place": "Narendra Nagar",
+      "boolean": false,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/olxclone-8671e.appspot.com/o/mobile%2Fnote5%20pro.jpg?alt=media&token=000c2718-1d41-48d8-aa25-49a5be1b2d32"
+    },
+    {
+      "price": 12000,
+      "productName": "Redmi note 8 pro",
+      "place": "jaipur",
+      "boolean": false,
+
+
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/olxclone-8671e.appspot.com/o/mobile%2Fnote%208%20pro.jpg?alt=media&token=286cf76f-d681-4b79-ada3-67a63c9ad466"
+    },
+    {
+      "price": 18500,
+      "productName": "k20 Pro 6GB 8 ",
+      "place": "Mansarovar , Jaipur",
+      "boolean": false,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/olxclone-8671e.appspot.com/o/mobile%2Fk20%20pro.jpg?alt=media&token=85069665-2fe8-41df-b33d-739ec93608d7"
+    },
+    {
+      "price": 26000,
+      "productName": "Iphone 7",
+      "place": "Malviya Nagar , Jaipur",
+      "boolean": false,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/olxclone-8671e.appspot.com/o/mobile%2Fiphone%207.jpg?alt=media&token=3fd1ffce-adc8-40cd-b82f-c01c24fa1425"
+    },
+    {
+      "price": 24000,
+      "productName": "Samsung Galaxy edge",
+      "place": "Vaisahali Nagar",
+      "boolean": false,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/olxclone-8671e.appspot.com/o/mobile%2Fsamsung%20galaxy%20s7%20edge.jpg?alt=media&token=6c7f19df-8139-41cd-951a-51f88b3db1d2"
+    },
+    {
+      "price": 26000,
+      "productName": "One plus Nord 5G (8/128)",
+      "place": "Triveni",
+      "boolean": false,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/olxclone-8671e.appspot.com/o/mobile%2FOne%20plus%20Nord%205G%20.jpg?alt=media&token=d997617c-612a-4278-a9ff-aaa4ebcb0950"
+    },
+    {
+      "price": 35000,
+      "productName": "Iphone 12(8/128)",
+      "place": "Tonk Phatak, jaipur",
+      "boolean": false,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/olxclone-8671e.appspot.com/o/mobile%2FIphone%2012(8128).jpg?alt=media&token=5aa827f1-2642-42a4-bb44-07ed2444c8c6"
     }
   ]
 }

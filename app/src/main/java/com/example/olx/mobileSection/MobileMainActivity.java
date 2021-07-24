@@ -21,7 +21,6 @@ import java.util.List;
 
 public class MobileMainActivity extends AppCompatActivity implements ItemClickListenerMObile {
     private RecyclerView mRecyclerView;
-    RecyclerView myadsRecyclerView;
 
     private MobileAdapter mobileAdapter;
     private List<Mobiles> mobilesList = new ArrayList<>();
@@ -31,7 +30,6 @@ public class MobileMainActivity extends AppCompatActivity implements ItemClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mobile_json);
         mRecyclerView = findViewById(R.id.mobileRecyclerView);
-        myadsRecyclerView = findViewById(R.id.mobileRecyclerView);
         setRecyclerAdapter();
         StartBackGroundThred();
 
@@ -108,6 +106,11 @@ public class MobileMainActivity extends AppCompatActivity implements ItemClickLi
 
 
         Intent intent = new Intent(MobileMainActivity.this, MobileDetails.class);
+        intent.putExtra("price",mobiles.getPrice() );
+        intent.putExtra("place" , mobiles.getPlace());
+        intent.putExtra("mobile",mobiles.getProductName());
+        intent.putExtra("image",mobiles.getImageUrl());
+
         startActivity(intent);
 
     }

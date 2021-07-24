@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.olx.R;
 import com.example.olx.ShowProductDetail.MobileDetails;
+import com.example.olx.ShowProductDetailForBike.BikeDetailActivity;
 import com.example.olx.mobileSection.MobileMainActivity;
 import com.example.olx.mobileSection.Mobiles;
 import com.google.gson.Gson;
@@ -109,7 +110,7 @@ public class BikeMainActivity extends AppCompatActivity implements ItemClickList
     @Override
     public void OnItemClickedBike(Bikes bikes, int position) {
 
-        Intent intent = new Intent(BikeMainActivity.this, MobileDetails.class);
+        Intent intent = new Intent(BikeMainActivity.this, BikeDetailActivity.class);
         startActivity(intent);
     }
 

@@ -120,7 +120,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/dp_5"
                 android:layout_marginTop="@dimen/dp_10"
-                android:id="@+id/BikeNAmed"
+                android:id="@+id/phoneNameid"
                 android:drawableEnd="@drawable/ic_dots"
                 android:paddingHorizontal="@dimen/dp_10"
                 android:text="@string/honda_cd_shine"
@@ -138,7 +138,7 @@
                 android:paddingHorizontal="@dimen/dp_10"
                 android:text="Number Viewed"
                 android:drawablePadding="@dimen/dp_5"
-                android:layout_below="@id/BikeNAmed"
+                android:layout_below="@id/phoneNameid"
                 android:layout_toEndOf="@id/ClientImgd"
                 android:textColor="@color/black"
                 android:textSize="@dimen/dp_12"/>

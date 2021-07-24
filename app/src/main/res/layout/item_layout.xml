@@ -13,6 +13,7 @@
     <RelativeLayout
         android:id="@+id/llcard"
         android:layout_width="match_parent"
+        android:background="@drawable/bg_rect"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 

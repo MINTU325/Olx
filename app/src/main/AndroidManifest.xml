@@ -12,27 +12,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Olx">
-        <activity android:name=".ShowProductDetail.MobileDetails"></activity>
-        <activity android:name=".mobileSection.MobileMainActivity" >
-
-
-        </activity>
-
-
-<!--    </application>-->
-        <activity android:name=".bikes.BikeMainActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".SplashScreen">
-
-
-
-        </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".ShowProductDetailForBike.BikeDetailActivity"></activity>
+        <activity android:name=".ShowProductDetail.MobileDetails" />
+        <activity android:name=".mobileSection.MobileMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+
+        </activity> <!-- </application> -->
+        <activity android:name=".bikes.BikeMainActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SplashScreen"></activity>
+        <activity android:name=".MainActivity">
+
         </activity>
     </application>
 
