@@ -5,6 +5,7 @@
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
     android:elevation="10dp"
+    android:background="@drawable/bg_rect"
     android:padding="@dimen/dp_5"
     app:cardCornerRadius="10dp">
 
@@ -12,6 +13,7 @@
     <RelativeLayout
         android:id="@+id/llcard"
         android:layout_width="match_parent"
+        android:background="@drawable/bg_rect"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
@@ -22,20 +24,41 @@
             android:layout_margin="10dp"
             />
 
-
         <TextView
-            android:id="@+id/tvprice"
-            android:layout_width="match_parent"
-            android:drawableEnd="@drawable/ic_heart_like_love_icon"
+            android:id="@+id/tvsign"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/tvimage"
-            android:padding="12dp"
             android:paddingStart="10dp"
             android:text="₹"
+            android:paddingTop="@dimen/dp_12"
             android:textStyle="bold"
             android:layout_marginStart="@dimen/dp_10"
             android:textColor="@color/black2"
             android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tvimage"
+            android:padding="12dp"
+            android:layout_toEndOf="@id/tvsign"
+            android:paddingStart="10dp"
+            android:text="₹"
+            android:textStyle="bold"
+            android:textColor="@color/black2"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:id="@+id/tvheart"
+            android:background="@color/white"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:src="@drawable/ic_heart_like_love_icon"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/dp_10"
+            android:layout_height="wrap_content"/>
 
         <TextView
             android:id="@+id/tvPlace"

@@ -63,9 +63,10 @@ public class HomeFragment extends Fragment implements ItemClickHorzontal {
     }
 
     private void buildData() {
+        horizontal_rv_modelList.add(new Horizontal_rv_model(R.drawable.ic_care, "OLX AUTOS"));
         horizontal_rv_modelList.add(new Horizontal_rv_model(R.drawable.ic_mobile, "MOBILES"));
+        horizontal_rv_modelList.add(new Horizontal_rv_model(R.drawable.ic__bike, "BIKES"));
         horizontal_rv_modelList.add(new Horizontal_rv_model(R.drawable.ic__cloth, "FASHION"));
-        horizontal_rv_modelList.add(new Horizontal_rv_model(R.drawable.ic__car, "cars"));
         horizontal_rv_modelList.add(new Horizontal_rv_model(R.drawable.ic__house, "PROPERTIES"));
         horizontal_rv_modelList.add(new Horizontal_rv_model(R.drawable.ic_jobs, "JOBS"));
 
@@ -113,7 +114,7 @@ public class HomeFragment extends Fragment implements ItemClickHorzontal {
     @Override
     public void OnItemClicked(Horizontal_rv_model horizontal_rv_model, int position) {
         Toast.makeText(getContext(), "position is " + position, Toast.LENGTH_SHORT).show();
-        if (position == 0) {
+        if (position == 1) {
             Intent intent = new Intent(getContext(), MobileMainActivity.class);
             startActivity(intent);
         } else if (position == 2) {

@@ -1,5 +1,6 @@
 package com.example.olx.bikes;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -8,6 +9,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.olx.R;
+import com.example.olx.ShowProductDetail.MobileDetails;
+import com.example.olx.ShowProductDetailForBike.BikeDetailActivity;
+import com.example.olx.mobileSection.MobileMainActivity;
+import com.example.olx.mobileSection.Mobiles;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -17,7 +22,7 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BikeMainActivity extends AppCompatActivity {
+public class BikeMainActivity extends AppCompatActivity implements ItemClickListenerBike{
     private RecyclerView mRecyclerView;
 //    Mobiles mobilesResponse;
     private BikeAdapter bikeAdapter;
@@ -36,7 +41,7 @@ public class BikeMainActivity extends AppCompatActivity {
     private void setRecyclerAdapter() {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(linearLayoutManager);
-        bikeAdapter = new BikeAdapter(bikesList);
+        bikeAdapter = new BikeAdapter(bikesList, this);
         mRecyclerView.setAdapter(bikeAdapter);
 
 
@@ -99,4 +104,25 @@ public class BikeMainActivity extends AppCompatActivity {
             ReadJsonFromAssets();
         }
     };
+
+
+
+    @Override
+    public void OnItemClickedBike(Bikes bikes, int position) {
+
+        Intent intent = new Intent(BikeMainActivity.this, BikeDetailActivity.class);
+        startActivity(intent);
+    }
+
+    @Override
+    public void OnLikeClickedBike(Bikes bikes, int position) {
+        Bikes updateCard;
+        if (bikes.isJsonMemberBoolean()) {
+            updateCard = new Bikes(bikes.getPrice(), bikes.getProductName(), bikes.getPlace(), false, bikes.getImageUrl());
+        } else {
+            updateCard = new Bikes(bikes.getPrice(), bikes.getProductName(), bikes.getPlace(), true, bikes.getImageUrl());
+        }
+        bikesList.set(position, updateCard);
+        bikeAdapter.notifyItemChanged(position);
+    }
 }

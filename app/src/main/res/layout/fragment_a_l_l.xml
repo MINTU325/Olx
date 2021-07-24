@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Chat_Section.ALLFragment">
+
+    <TextView
+        android:id="@+id/tvQuickFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_10"
+        android:paddingHorizontal="@dimen/dp_10"
+        android:text="quick Filters"
+        android:textAllCaps="true"
+        android:textSize="@dimen/sp_15"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/llcategoryd"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvQuickFilter"
+        android:padding="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_marginStart="@dimen/dp_10"
+            android:background="@drawable/bg_circular_rect"
+            android:backgroundTint="#57EADC"
+            android:padding="@dimen/dp_10"
+            android:text="All"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_5"
+            android:background="@drawable/bg_circular_rect"
+            android:padding="@dimen/dp_10"
+            android:text="Meeting"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_5"
+            android:background="@drawable/bg_circular_rect"
+            android:padding="@dimen/dp_10"
+            android:text="Unread"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_5"
+            android:background="@drawable/bg_circular_rect"
+            android:padding="@dimen/dp_10"
+            android:text="Important"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_below="@id/llcategoryd"
+        android:layout_height="@dimen/dp_100">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_5"
+                android:paddingHorizontal="@dimen/dp_10"
+                android:layout_alignParentEnd="true"
+                android:padding="@dimen/dp_10"
+                android:layout_alignParentTop="true"
+                android:text="25 July 20221"
+                android:layout_below="@id/ClientNAmedd"
+                android:textSize="@dimen/sp_15"/>
+            <ImageView
+                android:id="@+id/ClientImgd"
+                android:layout_width="@dimen/dp_60"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_margin="@dimen/dp_5"
+                android:layout_height="@dimen/dp_60"
+                android:background="@drawable/shineone"
+                android:contentDescription="TODO" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_10"
+                android:paddingHorizontal="@dimen/dp_10"
+                android:text="Riyaz"
+                android:id="@+id/ClientNAmedd"
+                android:layout_toRightOf="@id/ClientImgd"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_15"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_10"
+                android:id="@+id/phoneNameid"
+                android:drawableEnd="@drawable/ic_dots"
+                android:paddingHorizontal="@dimen/dp_10"
+                android:text="@string/honda_cd_shine"
+                android:layout_below="@id/ClientNAmedd"
+                android:layout_toEndOf="@id/ClientImgd"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_15"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:drawableStart="@drawable/ic_phone"
+                android:paddingHorizontal="@dimen/dp_10"
+                android:text="Number Viewed"
+                android:drawablePadding="@dimen/dp_5"
+                android:layout_below="@id/phoneNameid"
+                android:layout_toEndOf="@id/ClientImgd"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dp_12"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/black" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -14,9 +14,10 @@ import java.util.List;
 
 public class BikeAdapter extends RecyclerView.Adapter<BikeViewHolder> {
 private List<Bikes> bikesList;
-
-    public BikeAdapter(List<Bikes> bikesList) {
+ItemClickListenerBike itemClickListenerBike;
+    public BikeAdapter(List<Bikes> bikesList, ItemClickListenerBike itemClickListenerBike) {
         this.bikesList = bikesList;
+        this.itemClickListenerBike= itemClickListenerBike;
     }
 
     @NonNull
@@ -25,7 +26,7 @@ private List<Bikes> bikesList;
 
 
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_layout,parent,false);
-        return new BikeViewHolder(view);
+        return new BikeViewHolder(view,itemClickListenerBike);
     }
 
     @Override
