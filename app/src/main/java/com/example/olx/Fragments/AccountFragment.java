@@ -33,7 +33,7 @@ public class AccountFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         mIvMyOrder = view.findViewById(R.id.ivBackArrow_MyOrder1);
-        mIvMyOrder = view.findViewById(R.id.ivBackArrow_Settings2);
+        mIvSettings = view.findViewById(R.id.ivBackArrow_Settings2);
         mIvMyOrder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
