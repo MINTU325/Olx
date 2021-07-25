@@ -12,10 +12,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Olx">
-        <activity android:name=".Chat_Section.ChatRecyclerView.ChatActivity"></activity>
+        <activity android:name=".Settings"></activity>
+        <activity android:name=".Billing" />
+        <activity android:name=".Bikes" />
+        <activity android:name=".Properties" />
+        <activity android:name=".MobilesSell" />
+        <activity android:name=".IncludeSomeDetails" />
+        <activity android:name=".Chat_Section.ChatRecyclerView.ChatActivity" />
         <activity android:name=".ShowProductDetailForBike.BikeDetailActivity" />
         <activity android:name=".ShowProductDetail.MobileDetails" />
-        <activity android:name=".mobileSection.MobileMainActivity"></activity> <!-- </application> -->
+        <activity android:name=".mobileSection.MobileMainActivity" /> <!-- </application> -->
         <activity android:name=".bikes.BikeMainActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".SplashScreen">
@@ -25,7 +31,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
