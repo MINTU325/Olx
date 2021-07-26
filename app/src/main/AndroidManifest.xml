@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Olx">
-        <activity android:name=".Settings"></activity>
+        <activity android:name=".EnterPhoneNumber"></activity>
+        <activity android:name=".SellRecycler" />
+        <activity android:name=".Settings" />
         <activity android:name=".Billing" />
         <activity android:name=".Bikes" />
         <activity android:name=".Properties" />

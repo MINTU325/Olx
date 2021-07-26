@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_20"
+    android:elevation="@dimen/dp_10"
+    android:padding="@dimen/dp_5"
+    app:cardCornerRadius="@dimen/dp_20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvBrand_sell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="40dp"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tvYear_sell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="40dp"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tvPrice_sell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="40dp"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tvLocation_sell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="40dp"
+            android:textSize="22sp" />
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
