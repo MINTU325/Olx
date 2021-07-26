@@ -33,7 +33,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/guideline2">
 
-        <EditText
+        <Button
             android:id="@+id/etPhone_LoginScreen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
             android:hint="Continue With Phone"
             android:padding="@dimen/dp_10" />
 
-        <EditText
+        <Button
             android:id="@+id/etFacebook_LoginScreen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
             android:hint="Continue With FaceBook"
             android:padding="@dimen/dp_10" />
 
-        <EditText
+        <Button
             android:id="@+id/etGoogle_LoginScreen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
             android:hint="Continue With Google"
             android:padding="@dimen/dp_10" />
 
-        <EditText
+        <Button
             android:id="@+id/etEmail_LoginScreen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

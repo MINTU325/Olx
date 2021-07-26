@@ -1,5 +1,4 @@
 package com.example.olx;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -8,18 +7,22 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class LoginActivity extends AppCompatActivity {
+public class EnterPhoneNumber extends AppCompatActivity {
 
-    private Button mEtContinueWithPhone;
+    private EditText mETPhone;
+    private Button mBtnNext;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login2);
-        mEtContinueWithPhone = findViewById(R.id.etPhone_LoginScreen);
-        mEtContinueWithPhone.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_enter_phone_number);
+        mETPhone = findViewById(R.id.etPhoneNumber);
+        mBtnNext = findViewById(R.id.btnNext);
+
+        mBtnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this, EnterPhoneNumber.class);
+                Intent intent = new Intent(EnterPhoneNumber.this,GetOTP.class);
                 startActivity(intent);
             }
         });

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".GetOTP">
+    <TextView
+        android:id="@+id/tvLogin_EnterPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/ic_arrow_back"
+        android:drawablePadding="@dimen/dp_20"
+        android:text="Login"
+        android:textColor="@color/olx"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/black" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivProfilePic"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_100"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_50"
+        android:src="@drawable/pic"
+        app:civ_border_color="#03A9F4"
+        app:civ_border_overlay="true"
+        app:civ_border_width="@dimen/dp_2" />
+
+
+    <TextView
+        android:id="@+id/tvEnterPhone_EnterPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_40"
+        android:layout_marginTop="20dp"
+        android:text="Welcome back"
+        android:textColor="@color/olx"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/btnNext_EnterPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_40"
+        android:text="we sent a 4-digit code to +768768698797"
+        android:textColor="@color/olx" />
+
+
+    <com.broooapps.otpedittext2.OtpEditText
+        android:id="@+id/etOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:textColor="#0E0E0E"
+        android:layout_marginTop="60dp"
+        android:cursorVisible="false"
+        android:digits="0123456789"
+        android:inputType="number"
+        android:maxLength="4"
+        android:layout_marginHorizontal="@dimen/dp_40"
+        android:padding="8dp"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:oev_primary_color="@color/black"
+        app:oev_secondary_color="#8C9090"
+        tools:ignore="MissingClass" />
+    <TextView
+        android:id="@+id/tvResendCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_40"
+        android:layout_marginTop="30dp"
+        android:text="RESEND CODE BY SMS"
+        android:textColor="@color/olx"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/ResendCodebyCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_40"
+        android:layout_marginTop="20dp"
+        android:text="RESEND CODE BY CALL"
+        android:textColor="@color/olx"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+<!--    <Button-->
+<!--        android:id="@+id/btnNext"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="bottom"-->
+<!--        android:layout_marginStart="@dimen/dp_20"-->
+<!--        android:layout_marginTop="@dimen/dp_100"-->
+<!--        android:layout_marginEnd="@dimen/dp_20"-->
+<!--        android:background="@color/olx"-->
+<!--        android:text="Next"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="22sp" />-->
+
+
+
+</LinearLayout>
