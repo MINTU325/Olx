@@ -29,6 +29,7 @@
 * User Can Choose from the different category of products.
 * Data is Stored using local Json file and fetched in a recycler View.
 * Fragmets are used effeciently. 
+* User can chat with the buyer/Seller.
 * add the post in  My ads list.
 
 ## Team Members 
