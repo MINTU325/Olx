@@ -20,7 +20,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:id="@+id/llcategoryd"
+        android:id="@+id/sellerid"
         android:layout_height="wrap_content"
         android:layout_below="@id/tvQuickFilter"
         android:padding="@dimen/dp_10">
@@ -74,7 +74,8 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_below="@id/llcategoryd"
+        android:id="@+id/selleridCard"
+        android:layout_below="@id/sellerid"
         android:layout_height="@dimen/dp_100">
 
         <RelativeLayout

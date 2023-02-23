@@ -1,10 +1,190 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragments.AccountFragment">
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivProfilePic"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_100"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_50"
+        android:src="@drawable/pic"
+        app:civ_border_color="#03A9F4"
+        app:civ_border_overlay="true"
+        app:civ_border_width="@dimen/dp_2" />
 
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_60"
+        android:layout_toEndOf="@id/ivProfilePic"
+        android:text="SUMIT SINGH"
+        android:textSize="22sp"
+        android:textStyle="bold" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/tvEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvName"
+        android:layout_marginStart="130dp"
+        android:text="View and edit profile"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="130dp"
+        android:layout_height="2dp"
+        android:layout_alignBottom="@id/tvEdit"
+        android:layout_marginStart="130dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/tvMyOrder_accountFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivProfilePic"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_70"
+        android:drawableStart="@drawable/ic_baseline_shopping_bag_24"
+        android:drawablePadding="@dimen/dp_10"
+        android:text="Buy Package My orders"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPackage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMyOrder_accountFragment"
+        android:layout_marginStart="@dimen/dp_40"
+        android:text="Package,orders,billing,invoices" />
+
+    <ImageView
+        android:id="@+id/ivBackArrow_MyOrder1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="225dp"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:src="@drawable/ic_arrow_forward" />
+
+    <View
+        android:id="@+id/viewOne"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tvPackage"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tvSetting_Account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewOne"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_20"
+        android:drawableStart="@drawable/ic_settings"
+        android:drawablePadding="@dimen/dp_10"
+        android:text="Settings"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPrivacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSetting_Account"
+        android:layout_marginStart="@dimen/dp_40"
+        android:text="Privacy and logout" />
+
+    <ImageView
+        android:id="@+id/ivBackArrow_Settings2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewOne"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dp_25"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:src="@drawable/ic_arrow_forward" />
+
+    <View
+        android:id="@+id/viewTwo"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tvPrivacy"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tvHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewTwo"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_20"
+        android:drawableStart="@drawable/olx_2"
+        android:drawablePadding="@dimen/dp_10"
+        android:text="Help and Support"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvHelpSupport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvHelp"
+        android:layout_marginStart="@dimen/dp_40"
+        android:text="Help Center" />
+
+    <ImageView
+        android:id="@+id/ivBackArrow_Help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewTwo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dp_25"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:src="@drawable/ic_arrow_forward" />
+
+    <View
+        android:id="@+id/viewThree"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tvHelpSupport"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tvLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewThree"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_20"
+        android:drawableStart="@drawable/ic_baseline_language_24"
+        android:drawablePadding="@dimen/dp_10"
+        android:text="Select Language"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvEnglish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvLanguage"
+        android:layout_marginStart="@dimen/dp_40"
+        android:text="English" />
+
+    <ImageView
+        android:id="@+id/ivBackArrow_Language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewThree"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dp_25"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:src="@drawable/ic_arrow_forward" />
+
+</RelativeLayout>

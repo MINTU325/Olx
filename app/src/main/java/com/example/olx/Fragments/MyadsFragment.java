@@ -43,9 +43,8 @@ public class MyadsFragment extends Fragment {
         FragmentManager fm = getChildFragmentManager();
         myAdsViewPagerAdapter = new MyAdsViewPagerAdapter(fm, getLifecycle());
         ViewPager.setAdapter(myAdsViewPagerAdapter);
-        tabLayout.addTab(tabLayout.newTab().setText("First"));
-        tabLayout.addTab(tabLayout.newTab().setText("Second"));
-        tabLayout.addTab(tabLayout.newTab().setText("Third"));
+        tabLayout.addTab(tabLayout.newTab().setText("ADS"));
+        tabLayout.addTab(tabLayout.newTab().setText("FAVOURITES"));
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {

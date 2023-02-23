@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.AccountFragment">
+
+    <TextView
+        android:id="@+id/tvBilling1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:drawableStart="@drawable/ic_arrow_back"
+        android:layout_marginTop="20dp"
+        android:drawablePadding="@dimen/dp_20"
+        android:text="Invoices and Billing"
+        android:textColor="@color/olx"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/tvBilling1"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/tvMyOrder_BillingActivity1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:drawablePadding="@dimen/dp_10"
+        android:text="Buy Packages"
+        android:textColor="@color/olx"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPackage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMyOrder_BillingActivity1"
+        android:layout_marginStart="@dimen/dp_10"
+        android:text="sell fast with more margin" />
+
+    <ImageView
+        android:id="@+id/ivBackArrow_MyOrder34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dp_80"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:src="@drawable/ic_arrow_forward" />
+
+    <View
+        android:id="@+id/viewOne"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tvPackage"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tvSetting56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewOne"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="My Orders"
+        android:textColor="@color/olx"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPrivacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSetting56"
+        android:layout_marginStart="@dimen/dp_10"
+        android:text="Active scheduled and expire order" />
+
+    <ImageView
+        android:id="@+id/ivBackArrow_Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewOne"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dp_25"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:src="@drawable/ic_arrow_forward" />
+
+    <View
+        android:id="@+id/viewTwo"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tvPrivacy"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tvInvoices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewTwo"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="Invoices"
+        android:textColor="@color/olx"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvHelpSupport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvInvoices"
+        android:layout_marginStart="@dimen/dp_10"
+        android:text="sell and download" />
+
+    <ImageView
+        android:id="@+id/ivBackArrow_Help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewTwo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dp_25"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:src="@drawable/ic_arrow_forward" />
+
+    <View
+        android:id="@+id/viewThree"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tvHelpSupport"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tvLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewThree"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="Billing Information"
+        android:textColor="@color/olx"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvEnglish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvLanguage"
+        android:layout_marginStart="@dimen/dp_10"
+        android:text="edit address etc" />
+
+    <ImageView
+        android:id="@+id/ivBackArrow_Language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewThree"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dp_25"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:src="@drawable/ic_arrow_forward" />
+
+</RelativeLayout>
